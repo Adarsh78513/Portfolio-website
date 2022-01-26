@@ -5,5 +5,8 @@ h1 {
 }
 
 body {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(215, 245, 237);
+}
+a {
+    color: rgb(0, 68, 255);
 }
