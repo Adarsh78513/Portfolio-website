@@ -1,12 +1,29 @@
 h1 {
     text-align:center ;
-    color: rgb(7, 175, 147); 
+    color: rgb(0, 255, 13); 
     font-style:italic;
 }
 
 body {
     background-color: rgb(215, 245, 237);
+    margin: 2cm;
 }
 a {
     color: rgb(0, 68, 255);
+}
+
+.info {
+    list-style-type: none;
+    font-size:larger;
+    color: rgb(4, 104, 57);
+
+}
+
+.a {
+    color: rgb(0, 255, 64);
+}
+
+.h {
+    color: rgb(10, 9, 9);
+    
 }
