@@ -5,9 +5,53 @@ h1 {
 }
 
 body {
-    background-color: rgb(215, 245, 237);
-    margin: 2cm;
+    background-color: rgb(20, 27, 31);
+    color: white;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
 }
+section {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding:  100px 20vw;
+
+}
+
+.blue{
+    background-color: rgb(35, 35, 190);
+}
+
+.red {
+    background-color: rgb(173, 32, 32);
+}
+
+.green {
+    background-color: green;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 87px;
+}
+
+.wave .shape-fill {
+    fill: rgb(20, 27, 31);
+}
+
 a {
     color: rgb(0, 68, 255);
 }
@@ -23,7 +67,12 @@ a {
     color: rgb(0, 255, 64);
 }
 
-.h {
-    color: rgb(10, 9, 9);
-    
+.header {
+    background-color: rgb(15, 211, 211);
+    overflow: hidden;
+}
+
+#sec {
+    color: brown;
+    background-color: blue;
 }
