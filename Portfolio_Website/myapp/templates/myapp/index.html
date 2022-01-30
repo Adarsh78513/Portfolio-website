@@ -1,97 +1,165 @@
-{% load static  %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 
-        <title>My website</title>
-        <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
-        <style>
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <a href="#default" class="logo"><img src="{% static '\myapp\cc.png' %}" width="40px" height="40px"></a>
-            <div class="header_links">
-                <a href="https://github.com/Adarsh78513"><img src="{% static '\myapp\github.png'%} " width="40px" height="40px"></a>
-                <a href="https://www.linkedin.com/in/adarsh-raj-shivam-16634521a/"><img src="{% static 'myapp\Linkedin.png' %}" width="40px" height="40px"></a>
-                <a href="https://www.instagram.com/adarsh_ra1/"><img src="{% static '\myapp\Instagram_logo.png' %}" alt="Instagram" width="40px" height="40px"></a>
-            </div>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <title>My website</title>
+    <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#default" class="logo"><img src="{% static '\myapp\cc.png' %}" width="40px" height="40px"></a>
+        <div class="header_links">
+            <a href="https://github.com/Adarsh78513"><img src="{% static '\myapp\github.png'%} " width="40px"
+                    height="40px"></a>
+            <a href="https://www.linkedin.com/in/adarsh-raj-shivam-16634521a/"><img
+                    src="{% static 'myapp\Linkedin.png' %}" width="40px" height="40px"></a>
+            <a href="https://www.instagram.com/adarsh_ra1/"><img src="{% static '\myapp\Instagram_logo.png' %}"
+                    alt="Instagram" width="40px" height="40px"></a>
         </div>
-        <h1 style="color: rgba(240, 100, 8, 0.897); font-style:normal">This is Adarsh's website</h1>
-        <h1>Hello checkign the styles in the heading</h1> 
+    </div>
+    <h1 style="color: rgba(240, 100, 8, 0.897); font-style:normal">This is Adarsh's website</h1>
+    <h1>Hello checkign the styles in the heading</h1>
 
-        <div class="a">
-            <ul class="info">
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
-            </ul>
-        </div>
+    <div class="a">
+        <ul class="info">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+    </div>
 
-        
 
+
+    <section>
+        <h1>Heading in section 1</h1>
         <section>
-            <h1>Heading in section 1</h1>
+            <h1>Heading in section 2</h1>
             <section>
-                <h1>Heading in section 2</h1>
-                <section>
-                    <h1>Heading in section 3</h1>
-                </section>
+                <h1>Heading in section 3</h1>
             </section>
         </section>
+    </section>
 
-        <section class="blue">
-            <h1>Nice Curves</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem consequuntur nesciunt commodi! Doloremque vero est alias corporis similique, ab dicta, necessitatibus velit exercitationem beatae iste porro natus quas consequuntur minima?</p>
+    <section class="blue">
+        <h1>Nice Curves</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem consequuntur nesciunt commodi! Doloremque
+            vero est alias corporis similique, ab dicta, necessitatibus velit exercitationem beatae iste porro natus
+            quas consequuntur minima?</p>
 
-            <div class="wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-                </svg>
-            </div>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
 
-        </section>
-        <section>
-            <h1>Nice Curves</h1>
-            <p>Optio porro quam laborum reiciendis repudiandae dicta esse possimus sunt distinctio. Placeat enim explicabo dolor nisi, in necessitatibus rerum minima ea nesciunt minus qui, quo dolore a. Id, ratione nisi.</p>
-        </section>
-        <section class="red">
-            <h1>Nice Curves</h1>
-            <p>Atque alias earum nobis eum culpa, minima harum sapiente architecto ab vero perferendis, et blanditiis modi aut nam amet sequi deserunt! Omnis neque, debitis autem aliquid vero molestiae sunt nihil.</p>
+    </section>
+    <section class="circle-scatter image">
+        <h1>Nice Curves</h1>
+        <p>Optio porro quam laborum reiciendis repudiandae dicta esse possimus sunt distinctio. Placeat enim explicabo
+            dolor nisi, in necessitatibus rerum minima ea nesciunt minus qui, quo dolore a. Id, ratione nisi.</p>
 
-            <div class="wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-                </svg>
-            </div>
-        </section>
-        <section>
-            <h1>Nice Curves</h1>
-            <p>Aspernatur assumenda itaque ab suscipit laudantium praesentium eius rerum nostrum tenetur non vel exercitationem necessitatibus alias, corporis sequi, vero saepe doloribus odit nesciunt quidem architecto, autem in. Repellendus, porro aliquid.</p>
-        </section>
-        <section>
-            <h1>Nice Curves</h1>
-            <p>Nesciunt, distinctio nam nostrum ab recusandae enim sit similique harum possimus ipsum deserunt consequatur, a aut ad expedita sapiente exercitationem eveniet minima sequi dolorem? Consectetur impedit adipisci odit unde placeat!</p>
-        </section>
-        <section>
-            <h1>Nice Curves</h1>
-            <p>Possimus modi iusto a nemo corporis ab. Officiis quis, veritatis quo enim possimus sunt distinctio nam placeat eum alias. Perferendis, reprehenderit? Illum ullam ab incidunt laborum odio ex odit neque!</p>
-        </section>
-        <section>
-            <h1>Nice Curves</h1>
-            <p>Deleniti rem quibusdam suscipit aspernatur at ipsam molestiae hic officiis nisi quaerat labore quo veritatis omnis, amet aliquid pariatur dicta quos, provident nesciunt? Voluptatibus aperiam officia quas aspernatur dicta magni.</p>
-        </section>
-        <section>
-            <h1>Nice Curves</h1>
-            <p>Unde labore impedit quas debitis sequi, exercitationem magni fugit temporibus sapiente corrupti. Sit dolor minus, obcaecati nostrum fugit veritatis deleniti ipsum, tenetur minima aperiam sapiente, laudantium quos fuga ipsa reprehenderit.</p>
-        </section>
+    </section>
 
-    </body>
+    <!-- <div class="circle-scatter image"></div> -->
+
+    <section class="red">
+        <h1>Nice Curves</h1>
+        <p>Atque alias earum nobis eum culpa, minima harum sapiente architecto ab vero perferendis, et blanditiis modi
+            aut nam amet sequi deserunt! Omnis neque, debitis autem aliquid vero molestiae sunt nihil.</p>
+
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="pink">
+        <h1>Nice Curves</h1>
+        <p>Aspernatur assumenda itaque ab suscipit laudantium praesentium eius rerum nostrum tenetur non vel
+            exercitationem necessitatibus alias, corporis sequi, vero saepe doloribus odit nesciunt quidem architecto,
+            autem in. Repellendus, porro aliquid.</p>
+        <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(447.5233211443749 302.0823325771969)">
+                <path id="blob1"
+                    d="M105.9 -107.9C141 -70.7 176 -35.4 185.7 9.7C195.3 54.7 179.7 109.4 144.5 146.2C109.4 183 54.7 202 -4.7 206.7C-64.1 211.4 -128.2 201.9 -155.2 165.1C-182.2 128.2 -172.1 64.1 -175.4 -3.3C-178.7 -70.7 -195.4 -141.4 -168.4 -178.6C-141.4 -215.8 -70.7 -219.4 -17.7 -201.7C35.4 -184 70.7 -145 105.9 -107.9"
+                    fill="#BB004B"></path>
+            </g>
+            <g transform="translate(482.8129918397286 337.6662012812775)" style="visibility: hidden;">
+                <path id="blob2"
+                    d="M151.9 -175.4C178.4 -125.4 168.7 -62.7 157.7 -11C146.8 40.8 134.6 81.6 108.1 109.9C81.6 138.2 40.8 154.1 -11.8 165.9C-64.3 177.7 -128.7 185.4 -173.9 157C-219 128.7 -245 64.3 -230.5 14.5C-216 -35.4 -161 -70.7 -115.9 -120.7C-70.7 -170.7 -35.4 -235.4 13.7 -249C62.7 -262.7 125.4 -225.4 151.9 -175.4"
+                    fill="#BB004B"></path>
+            </g>
+            <g transform="translate(401.39959519111665 313.39960531009933)" style="visibility: hidden;">
+                <path id="blob3"
+                    d="M126.4 -119.7C176.4 -76.4 238.2 -38.2 246.2 8C254.2 54.2 208.4 108.4 158.4 142.3C108.4 176.1 54.2 189.5 8.8 180.7C-36.5 171.9 -73.1 140.7 -101.6 106.9C-130.1 73.1 -150.5 36.5 -149.9 0.6C-149.4 -35.4 -127.7 -70.7 -99.2 -114C-70.7 -157.4 -35.4 -208.7 1.4 -210.1C38.2 -211.5 76.4 -163 126.4 -119.7"
+                    fill="#BB004B"></path>
+            </g>
+        </svg>
+
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 999, duration: 3000, yoyo: true }
+            )
+
+            tween.start();
+        </script>
+
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Nesciunt, distinctio nam nostrum ab recusandae enim sit similique harum possimus ipsum deserunt consequatur,
+            a aut ad expedita sapiente exercitationem eveniet minima sequi dolorem? Consectetur impedit adipisci odit
+            unde placeat!</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Possimus modi iusto a nemo corporis ab. Officiis quis, veritatis quo enim possimus sunt distinctio nam
+            placeat eum alias. Perferendis, reprehenderit? Illum ullam ab incidunt laborum odio ex odit neque!</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Deleniti rem quibusdam suscipit aspernatur at ipsam molestiae hic officiis nisi quaerat labore quo veritatis
+            omnis, amet aliquid pariatur dicta quos, provident nesciunt? Voluptatibus aperiam officia quas aspernatur
+            dicta magni.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Unde labore impedit quas debitis sequi, exercitationem magni fugit temporibus sapiente corrupti. Sit dolor
+            minus, obcaecati nostrum fugit veritatis deleniti ipsum, tenetur minima aperiam sapiente, laudantium quos
+            fuga ipsa reprehenderit.</p>
+    </section>
+
+</body>
+
 </html>

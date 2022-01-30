@@ -52,6 +52,20 @@ section {
     fill: rgb(20, 27, 31);
 }
 
+.circle-scatter {
+    aspect-ratio: 900/600;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.image {
+    background-image: url('./circle-scatter-haikei.svg');
+}
+
+
 a {
     color: rgb(0, 68, 255);
 }
