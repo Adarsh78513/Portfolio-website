@@ -136,11 +136,31 @@
         </script>
 
     </section>
-    <section>
+    <section class="pink">
         <h1>Nice Curves</h1>
         <p>Nesciunt, distinctio nam nostrum ab recusandae enim sit similique harum possimus ipsum deserunt consequatur,
             a aut ad expedita sapiente exercitationem eveniet minima sequi dolorem? Consectetur impedit adipisci odit
             unde placeat!</p>
+
+        <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <defs>
+                <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                    <feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur"></feGaussianBlur>
+                </filter>
+            </defs>
+            <g filter="url(#blur1)">
+                <circle cx="473" cy="228" fill="#00CC99" r="357"></circle>
+                <circle cx="215" cy="360" fill="#6600FF" r="357"></circle>
+                <circle cx="298" cy="144" fill="#00CC99" r="357"></circle>
+                <circle cx="872" cy="462" fill="#00CC99" r="357"></circle>
+                <circle cx="435" cy="14" fill="#6600FF" r="357"></circle>
+                <circle cx="863" cy="255" fill="#00CC99" r="357"></circle>
+            </g>
+            <g filter="url(#blur1)"><circle cx="559" cy="241" fill="#00CC99" r="357"></circle><circle cx="891" cy="57" fill="#6600FF" r="357"></circle><circle cx="202" cy="71" fill="#00CC99" r="357"></circle><circle cx="765" cy="491" fill="#00CC99" r="357"></circle><circle cx="17" cy="325" fill="#6600FF" r="357"></circle><circle cx="304" cy="280" fill="#00CC99" r="357"></circle></g>
+        </svg>
     </section>
     <section>
         <h1>Nice Curves</h1>
